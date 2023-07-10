@@ -5,6 +5,7 @@ import SkillMenu from "./SkillMenu";
 const Skill = () => {
 
     const [items, setItems] = useState(SkillMenu);
+
     const filterItem = (categoryItem) => {
         const updateItems = SkillMenu.filter((curElem) => {
             return curElem.category === categoryItem;
@@ -30,9 +31,7 @@ const Skill = () => {
                     const{ id, image } = elem;
                     return (
                         <div className="skill_card" key={ id }>
-                            <div className="skill_thumbnail">
-                                <img src={ image } alt="" className="skill_img" />
-                            </div>
+                            <img src={ image } alt="" className="skill_img" />
                         </div>
                     )
                 }) }
