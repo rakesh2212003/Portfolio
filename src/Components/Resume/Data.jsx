@@ -5,7 +5,7 @@ const Data = [
         icon: "icon-graduation",
         year: "2020 - present",
         title: "College of Engineering and Management, Kolaghat",
-        desc: "B.Tech, CGPA - 9.45",
+        desc: "B.Tech, CGPA - 9.09",
     },
     {
         id: 2,
