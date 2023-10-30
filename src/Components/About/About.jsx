@@ -1,8 +1,9 @@
 import React from 'react'
 import "./About.css" ;
-import about from "../../Assets/avatar-2.svg";
+// import about from "../../Assets/avatar-2.svg";
+import about from "../../Assets/avatar-5.png";
 import Aboutbox from "./Aboutbox";
-import resume from "../../Assets/Resume.pdf";
+// import resume from "../../Assets/Resume.pdf";
 
 const About = () => {
     return (
@@ -10,14 +11,20 @@ const About = () => {
             <h2 className="section_title">About Me</h2>
             
             <div className="about_container grid">
-                <img src={about} alt="" className="about_img" />
+                <img src={about} alt="" className="about_img" style={{width: "200px"}}/>
 
                 <div className="about_data grid">
                     <div className="about_info">
                         <p className="about_description">
                             I'm a computer science student and a Full-Stack developer, lived in West Bengal, India. I'm hard working and passionate towards my work.
                         </p>
-                        <a href={ resume } className="btn" download>Download Resume</a>
+                        <a
+                            href="https://docs.google.com/document/d/1Xf5x3OXEbzVY4YkFNDLRC7QSo_wMDDgyuPpZWzMOGDo/edit"
+                            className="btn"
+                            target='_blank'
+                        >
+                            Show Resume
+                        </a>
                     </div>
 
                     <div className="about_skills grid">
